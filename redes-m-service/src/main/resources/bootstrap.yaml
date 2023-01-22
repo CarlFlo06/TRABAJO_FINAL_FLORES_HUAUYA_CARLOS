@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: redes-service
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081
+  datasource:
+      url: jdbc:postgresql://localhost:5432/redes
+      username: postgres
+      password: 456123789
+      driverClassName: org.postgresql.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl:
+          auto: create-drop
+   
+

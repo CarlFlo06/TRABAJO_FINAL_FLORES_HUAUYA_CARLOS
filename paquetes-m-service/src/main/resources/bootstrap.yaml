@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: paquetes-service
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/paquetes
+      
+

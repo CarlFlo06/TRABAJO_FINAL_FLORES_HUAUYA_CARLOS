@@ -1,0 +1,3 @@
+insert into redes (nombre,detalle,precio) values('Facebook, Instagram y WhatsApp','para que puedas conectarte con todo el mundo',5);
+insert into redes (nombre,detalle,precio) values('Youtube, Twitter y TikTok','para diversión y entretenimiento',10);
+insert into redes (nombre,detalle,precio) values('Todo Videos Netflix y Amazon Prime','para mucho mas entretenimiento y pasarla en familia o amigos',15);
