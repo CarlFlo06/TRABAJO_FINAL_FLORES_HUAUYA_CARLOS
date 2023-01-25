@@ -26,14 +26,14 @@ public class CatalogoController {
 	private CatalogoService catalogoService;
 	
 	@CircuitBreaker(name = "paquetesCB", fallbackMethod = "fallBackGetPaquetes")
-	@GetMapping("/listar/paquetes")
+	@GetMapping("/paquetes")
 	public ResponseEntity<List<PaquetesInternet>> listarPaquetes(){
 		List<PaquetesInternet> paquetes = catalogoService.findPaquetesAll();
 		return ResponseEntity.ok(paquetes);
 	}
 	
 	@CircuitBreaker(name = "redesCB", fallbackMethod = "fallBackGetRedes")
-	@GetMapping("/listar/redes")
+	@GetMapping("/redes")
 	public ResponseEntity<List<RedesSociales>> listarRedes(){
 		List<RedesSociales> redes = catalogoService.findRedesAll();
 		return ResponseEntity.ok(redes);

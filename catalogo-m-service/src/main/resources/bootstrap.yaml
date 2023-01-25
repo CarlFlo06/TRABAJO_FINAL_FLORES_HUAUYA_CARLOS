@@ -1,6 +1,6 @@
 spring:
   application:
-    name: catalogo-service
+    name: catalogo-m-service
   cloud:
     config:
       enabled: true

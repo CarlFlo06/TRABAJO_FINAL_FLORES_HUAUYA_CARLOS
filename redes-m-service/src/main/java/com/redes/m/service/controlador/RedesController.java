@@ -13,12 +13,12 @@ import com.redes.m.service.entidades.RedesSociales;
 import com.redes.m.service.servicio.RedesService;
 
 @RestController
-//@RequestMapping
+@RequestMapping("redes")
 public class RedesController {
 	@Autowired
 	private RedesService redesService;
 	
-	@GetMapping("/listar")
+	//@GetMapping("/listar")
 	public List<RedesSociales>listar(){
 		return redesService.getAll().stream().map(redesSociales->{
 			return redesSociales;

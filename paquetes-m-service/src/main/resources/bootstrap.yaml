@@ -1,6 +1,6 @@
 spring:
   application:
-    name: paquetes-service
+    name: paquetes-m-service
   cloud:
     config:
       enabled: true

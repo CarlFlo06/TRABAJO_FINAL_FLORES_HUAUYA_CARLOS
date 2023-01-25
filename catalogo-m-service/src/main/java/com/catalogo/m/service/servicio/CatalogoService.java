@@ -23,12 +23,12 @@ public class CatalogoService {
 	//private RedesSocialesFeignClient redesSocialesFeignClient;
 	
 	public List<RedesSociales>findRedesAll() {
-		List<RedesSociales> rs=Arrays.asList(restTemplate.getForObject("http://redes-service/listar",RedesSociales[].class));
+		List<RedesSociales> rs=Arrays.asList(restTemplate.getForObject("http://redes-m-service/redes/catalogo",RedesSociales[].class));
 		return rs; 
 	}
 	
 	public List<PaquetesInternet>findPaquetesAll() {
-		List<PaquetesInternet> pi=Arrays.asList(restTemplate.getForObject("http://paquetes-service/listar",PaquetesInternet[].class));
+		List<PaquetesInternet> pi=Arrays.asList(restTemplate.getForObject("http://paquetes-m-service/paquetes/listar",PaquetesInternet[].class));
 		return pi;
 	}
 	
