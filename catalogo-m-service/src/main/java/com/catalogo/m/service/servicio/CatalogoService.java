@@ -13,6 +13,7 @@ import com.catalogo.m.service.feignclients.RedesSocialesFeignClient;
 import com.catalogo.m.service.modelos.Catalogo;
 import com.catalogo.m.service.modelos.PaquetesInternet;
 import com.catalogo.m.service.modelos.RedesSociales;
+
 //("serviceFeign")
 @Service
 public class CatalogoService {
@@ -23,7 +24,7 @@ public class CatalogoService {
 	//private RedesSocialesFeignClient redesSocialesFeignClient;
 	
 	public List<RedesSociales>findRedesAll() {
-		List<RedesSociales> rs=Arrays.asList(restTemplate.getForObject("http://redes-m-service/redes/catalogo",RedesSociales[].class));
+		List<RedesSociales> rs=Arrays.asList(restTemplate.getForObject("http://redes-m-service/redes/listar",RedesSociales[].class));
 		return rs; 
 	}
 	
@@ -32,6 +33,12 @@ public class CatalogoService {
 		return pi;
 	}
 	
+	/*public List<Catalogo> findAll() {
+		List<Catalogo> catalogo;
+		List<PaquetesInternet>paquetes=Arrays.asList(restTemplate.getForObject("http://producto-service/producto",PaquetesInternet[].class));
+		List<RedesSociales> redes=Arrays.asList(restTemplate.getForObject("http://redes-m-service/redes/listar",RedesSociales[].class));
+		return catalogo.stream().map(p->new Catalogo(paquetes,redes)).collect(Collectors.toList());
+	}*/
 	/*public List<Catalogo>findPaquetesAll() {
 		List<PaquetesInternet> paquetesInternet=Arrays.asList(restTemplate.getForObject("http://paquetes-service/listar",PaquetesInternet[].class));
 		return paquetesInternet.stream().map(pi->new Catalogo(pi)).collect(Collectors.toList());

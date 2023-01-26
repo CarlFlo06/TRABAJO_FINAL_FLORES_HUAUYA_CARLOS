@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+	<div th:replace="layout :: header"></div>
+
+	<div class="container-xxl">
+
+		<div class="px-4 w-100">
+			<div class="text-center mt-4">
+				<h4>Catalogo de Productos</h4>
+			</div>
+			<div
+				class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center align-items-center align-content-center text-center">
+				<div class="con m-2" style="width:30%;">
+					<img class="mb-4" alt=""
+						src="https://ichef.bbci.co.uk/news/640/cpsprodpb/F750/production/_107821336_gettyimages-613672992.jpg">
+					<a href="/catalogo/listarpaquetes"><h3>Paquetes Internet</h3></a>
+				</div>
+				<div class="con m-2" style="width:30%;">
+					<img class="mb-4" alt=""
+						src="https://periodico.colegiovirgendelmar.com/wp-content/uploads/tipos-de-redes-sociales.jpg">
+					<a href="/catalogo/listarredes"><h3 class="">Redes Sociales</h3></a>
+				</div>
+				<div class="con m-2" style="width:30%;">
+					<img class="mb-4" alt=""
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh0FTDnuadtjc58Ety7NuUsEr2-pBk3Z-lWA&usqp=CAU">
+					<a href="#"><h3>Recargas</h3></a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div th:replace="layout :: footer"></div>
+</body>
+</html>

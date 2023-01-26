@@ -7,21 +7,18 @@ import lombok.Setter;
 @Setter
 public class Catalogo {
 	private PaquetesInternet paquetesInternet;
-	private Recargas recargas;
+	//private Recargas recargas;
 	private RedesSociales redesSociales;
 	
 	public Catalogo() {
 		super();
 	}
-	
-	public Catalogo(RedesSociales rs) {
+
+	public Catalogo(PaquetesInternet paquetesInternet, RedesSociales redesSociales) {
 		super();
-		this.redesSociales=rs;
-	}
-	
-	public Catalogo(PaquetesInternet pi) {
-		super();
-		this.paquetesInternet=pi;
+		this.paquetesInternet = paquetesInternet;
+		//this.recargas = recargas;
+		this.redesSociales = redesSociales;
 	}
 	
 }

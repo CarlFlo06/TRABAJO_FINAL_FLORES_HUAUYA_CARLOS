@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head th:fragment="head">
+<meta charset="ISO-8859-1">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+	crossorigin="anonymous"></script>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<style>
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/*footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 50px;
+	width: 100%;
+	background: #999;
+}*/
+
+body {
+    margin: 0;
+    display: grid;
+    height: 100%;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+footer {
+    color: white;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    padding: 1em 0;
+    text-align: center;
+}
+img{
+	width:100%;
+}
+</style>
+</head>
+<body>
+	<div th:fragment="header">
+		<div class="d-flex">
+			<div
+				class="d-flex flex-column flex-shrink-0 text-white bg-dark text-center"
+				style="width: 280px;">
+				<span class="fs-4">Menu</span>
+				<hr>
+
+				<a href="/catalogo/inicio" class="nav-link text-white m-2"><i
+					class="bi bi-house-door-fill"></i> Inicio 
+				</a> 
+					
+				<a href="/catalogo/productos" class="nav-link text-white m-2"> <i
+					class="bi bi-box2-fill"></i> Productos
+				</a>
+
+
+			</div>
+			<div class="bg-dark w-100 p-4 text-white text-end">
+				<h2 class="">TELCO</h2>
+			</div>
+		</div>
+	</div>
+
+	<div th:fragment="footer">
+		<footer
+			class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top bg-secondary">
+			<div class="col-md-4 d-flex align-items-center">
+				<a href="/"
+					class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+					<svg class="bi" width="30" height="24">
+							<use xlink:href="#bootstrap"></use></svg>
+				</a> <span class="mb-3 mb-md-0 text-muted">&copy; 2023 BOCKY CALL SAC</span>
+			</div>
+
+			<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+				<li class="ms-3"><a class="text-muted" href="#"><svg
+							class="bi" width="24" height="24">
+								<use xlink:href="#twitter"></use></svg></a></li>
+				<li class="ms-3"><a class="text-muted" href="#"><svg
+							class="bi" width="24" height="24">
+								<use xlink:href="#instagram"></use></svg></a></li>
+				<li class="ms-3"><a class="text-muted" href="#"><svg
+							class="bi" width="24" height="24">
+								<use xlink:href="#facebook"></use></svg></a></li>
+			</ul>
+		</footer>
+	</div>
+
+</body>
+</html>

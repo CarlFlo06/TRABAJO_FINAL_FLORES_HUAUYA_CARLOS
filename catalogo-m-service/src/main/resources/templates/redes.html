@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head"></head>
+<body>
+	<div th:replace="layout :: header"></div>
+
+	<div class="container-xxl">
+
+		<div class="px-4 w-100">
+			<div class="text-center mt-4">
+				<h4>Catalogo de Redes Sociales</h4>
+			</div>
+			<div
+				class="row text-center justify-content-center align-items-center align-content-center">
+				<div class="con m-2" style="width:30%;">
+					<img class="mb-4" alt=""
+						src="https://www.pandaancha.mx/plds/articulos/froala/WhatsApp-Facebook-Instagram-1920x1080-399637506.jpg"> 
+					<a href="/catalogo/redes1"
+						class="btn btn-outline-secondary m-1"> Detalles </a>
+					<button class="btn btn-danger m-1">Comprar</button>
+				</div>
+				<div class="con m-2" style="width:30%;">
+					<img class="mb-4" alt=""
+						src="https://imagenes.lainformacion.com/files/article_default_content/uploads/imagenes/2021/10/15/emprendedores-redes-sociales-tiktok-facebook-youtube-whatsapp.jpeg">
+					<a href="/catalogo/redes2"
+						class="btn btn-outline-secondary m-1"> Detalles </a>
+					<button class="btn btn-danger m-1">Comprar</button>
+				</div>
+				<div class="con m-2" style="width:30%;">
+					<img class="mb-4" alt=""
+						src="https://andro4all.com/hero/2022/02/trackmysubs-portada.jpg?width=1200"> 
+					<a href="/catalogo/redes3"
+						class="btn btn-outline-secondary m-1"> Detalles </a>
+					<button class="btn btn-danger m-1">Comprar</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div th:replace="layout :: footer"></div>
+</body>
+</html>

@@ -1,3 +1,3 @@
-insert into redes (nombre,detalle,precio) values('Facebook, Instagram y WhatsApp','para que puedas conectarte con todo el mundo',5);
-insert into redes (nombre,detalle,precio) values('Youtube, Twitter y TikTok','para diversión y entretenimiento',10);
-insert into redes (nombre,detalle,precio) values('Todo Videos Netflix y Amazon Prime','para mucho mas entretenimiento y pasarla en familia o amigos',15);
+insert into redes (nombre,detalle,precio) values('Facebook, Instagram y WhatsApp','Si estas mucho en la calle y eres de los que paran activos en las redes sociales, pues esta promoción es para ti ya que incluye Facebook, Instagram y WhatsApp por el precio de s/ 5.00',5);
+insert into redes (nombre,detalle,precio) values('Youtube, Twitter y TikTok','Si eres de los que necesita un poco de entretenimiento pues que esperas y adquiere esta promoción y veras que ya no te aburriras ya que contaras con el acceso a Youtube, Twitter y TikTok por el precio de s/ 10.00',10);
+insert into redes (nombre,detalle,precio) values('Todo Videos Netflix y Amazon Prime','Si eres de los que ven muchas peliculas y series, pues que esperas esta promoción es para tí y tendras mucho mas entretenimiento y podras pasarla en familia o amigos por el precio de s/ 15.00',15);
